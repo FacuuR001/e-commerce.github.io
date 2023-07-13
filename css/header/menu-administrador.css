@@ -1,0 +1,13 @@
+.administrador {
+    color: var(--colorPrimario);
+    border: .1rem solid var(--colorPrimario);
+    background-color: transparent;
+    width: 16rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    font-size: 1.3rem;
+}
+
+.row-reverse-administrador {
+    gap: 1.5rem;
+}

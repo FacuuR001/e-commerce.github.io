@@ -9,6 +9,8 @@
     margin-bottom: 2rem;
     padding: 1rem;
     border-bottom: 2px solid var(--borderBottomInput);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .form__label {
@@ -27,6 +29,8 @@
     margin-bottom: 2rem;
     padding: 1rem;
     border-bottom: 2px solid var(--borderBottomInput);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .form__btn {
