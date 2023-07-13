@@ -1,0 +1,14 @@
+.main {
+    min-width: 100%;
+    padding: 2rem;
+}
+
+.admin-fondo {
+    background: var(--fondoLogin);
+}
+
+@media (min-width: 1024px) { 
+    .main {
+        padding: 2rem 9rem;
+    }
+}

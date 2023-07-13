@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/general.css"> <!-- General CSS -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Normalize -->
+    <link rel="stylesheet" href="css/header/header.css"> <!-- Header -->
+    <link rel="stylesheet" href="css/hero/hero.css"> <!-- Hero -->
+    <link rel="stylesheet" href="css/main/main.css"> <!-- Main -->
+    <link rel="stylesheet" href="css/main/cards/productos-header.css"> <!-- Autos Header -->
+    <link rel="stylesheet" href="css/main/cards/cards-productos.css"> <!-- Cards Autos -->
+    <link rel="stylesheet" href="css/informacion/info.css"> <!-- Información -->
+    <link rel="stylesheet" href="css/formulario/formulario.css"> <!-- Formulario -->
+    <link rel="stylesheet" href="css/footer/footer.css"> <!-- Footer -->
+
+
+    <title>AluraGeek</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="logo" href="index.html">
+            <img 
+                class="img" 
+                src="assets/img/header/Logo-Alura.png" 
+                alt="Logo-ecommerse"
+            >
+        </a>
+        <div class="row-reverse">
+            <div class="buscador">
+                <input class="buscador__texto" type="text" placeholder="¿Que deseas buscar?">
+                <button class="buscador__boton"><i class="fa fa-search"></i></button>
+            </div>
+            <a href="login.html" class="btn login">Login</a>
+        </div>
+    </header> <!-- Header -->
+
+    <section class="hero">
+        <div class="hero__oscuro">
+            <h1 class="hero__titulo">Mes Promocional</h1>
+            <p class="hero__texto">Productos seleccionado con 33% de descuento</p>
+            <a class="btn hero__btn" href="seccion-admin.html">Ver Productos</a>
+        </div>
+    </section> <!-- Hero -->
+
+    <main class="main">
+        <section class="compra">
+            <div class="producto__header">
+                <h2 class="producto__titulo">Autos</h2>
+                <a class="producto__mas" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i> </a>
+            </div>
+            <div class="cards">
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/autos/auto-1.jpg" alt="auto-deportivo">
+                    <p class="cards__marca" >Dodge Charger 1970</p>
+                    <p class="cards__precio" ><strong>US$ 50,000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/autos/auto-2.jpg" alt="auto-deportivo">
+                    <p class="cards__marca" >Nissan SkyLine r34</p>
+                    <p class="cards__precio" ><strong>US$ 1.360.000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/autos/auto-3.jpg" alt="auto-deportivo">
+                    <p class="cards__marca" >Lamborghini Urus</p>
+                    <p class="cards__precio" ><strong>US$ 280,000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/autos/auto-4.jpg" alt="auto-deportivo">
+                    <p class="cards__marca" >Ferrari F8 Tributo</p>
+                    <p class="cards__precio" ><strong>US$ 400,000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+            </div>
+        </section> <!-- Card Autos -->
+
+        <section class="compra">
+            <div class="producto__header">
+                <h2 class="producto__titulo">Motos</h2>
+                <a class="producto__mas" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i> </a>
+            </div>
+            <div class="cards">
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/motos/moto-1.jpg" alt="motos">
+                    <p class="cards__marca" >Yamaha XSR 900</p>
+                    <p class="cards__precio" ><strong>US$ 19,000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/motos/moto-2.jpg" alt="motos">
+                    <p class="cards__marca" >Moto Chopera</p>
+                    <p class="cards__precio" ><strong>US$ 18,000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/motos/moto-3.jpg" alt="motos">
+                    <p class="cards__marca" >Suzuki TSM</p>
+                    <p class="cards__precio" ><strong>US$ 10,000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/motos/moto-4.jpg" alt="motos">
+                    <p class="cards__marca" >Moto Harley Davidson</p>
+                    <p class="cards__precio" ><strong>US$ 27,000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+            </div>
+        </section> <!-- Card Motos -->
+
+        <section class="compra">
+            <div class="producto__header">
+                <h2 class="producto__titulo">Barcos</h2>
+                <a class="producto__mas" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i> </a>
+            </div>
+            <div class="cards">
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/barcos/barco-1.jpg" alt="barcos">
+                    <p class="cards__marca" >Crucero</p>
+                    <p class="cards__precio" ><strong>US$ 1.865.000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/barcos/barco-2.jpg" alt="barcos">
+                    <p class="cards__marca" >Velero</p>
+                    <p class="cards__precio" ><strong>US$ 38,000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+            </div>
+        </section> <!-- Card Barcos -->
+
+        <section class="compra">
+            <div class="producto__header">
+                <h2 class="producto__titulo">Aviones</h2>
+                <a class="producto__mas" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i> </a>
+            </div>
+            <div class="cards">
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/aviones/avion-1.jpg" alt="aviones">
+                    <p class="cards__marca" >Avion Militar F153</p>
+                    <p class="cards__precio" ><strong>US$ 2.865.000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/aviones/avion-2.jpg" alt="aviones">
+                    <p class="cards__marca" >Avion de Carga Militar</p>
+                    <p class="cards__precio" ><strong>US$ 9.538,030</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/aviones/avion-3.jpg" alt="aviones">
+                    <p class="cards__marca" >Avion N63392</p>
+                    <p class="cards__precio" ><strong>US$ 5.865.090</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/aviones/avion-4.jpg" alt="aviones">
+                    <p class="cards__marca" >Avioneta Kax</p>
+                    <p class="cards__precio" ><strong>US$ 1.238,500</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/aviones/avion-5.jpg" alt="aviones">
+                    <p class="cards__marca" >Avion Militar J-5005</p>
+                    <p class="cards__precio" ><strong>US$ 7.595.450</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/aviones/avion-6.jpg" alt="aviones">
+                    <p class="cards__marca" >Hidroavion Whistler Air</p>
+                    <p class="cards__precio" ><strong>US$ 4.545,250</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+            </div>
+        </section> <!-- Card Aviones -->
+
+        <section class="compra">
+            <div class="producto__header">
+                <h2 class="producto__titulo">Helicopteros</h2>
+                <a class="producto__mas" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i> </a>
+            </div>
+            <div class="cards">
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/helicopteros/helicoptero-1.jpg" alt="helicopteros">
+                    <p class="cards__marca" >Helicoptero ZJ19</p>
+                    <p class="cards__precio" ><strong>US$ 1.854.000</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+                <div class="cards__contenido">
+                    <img  class="cards__img" src="assets/img/helicopteros/helicoptero-2.jpg" alt="helicopteros">
+                    <p class="cards__marca" >Helicoptero Bombero</p>
+                    <p class="cards__precio" ><strong>US$ 1.538,030</strong></p>
+                    <a  class="cards__producto" href="#">Ver producto</a>
+                </div>
+            </div>
+        </section> <!-- Card Helicopteros -->
+    </main> <!-- Main -->
+
+    <section class="info">
+        <div class="info__contenido">
+            <h3 class="info__logo"><img class="info__img" src="assets/img/header/Logo-Alura.png" alt="Logo-Alura"></h3>
+            <nav class="info__nav">
+                <ul class="info__lista">
+                    <li class="info__item"><a class="info__link" href="#">Quienes somos</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Politicas de privacidad</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Programa de fidelidad</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Nuestras tiendas</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Quiero ser franquiciado</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Anúncie aqui</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="form__contenido">
+            <h3 class="formulario__titulo">Contactenos</h3>
+            <form class="form">
+                <div class="form__nombre">
+                    <label class="form__label" for="nombre">Nombre</label>
+                    <input name="nombre" class="form__input" type="text" id="nombre" required data-tipo="nombre">
+                </div>
+                <div class="form__email">
+                    <label class="form__label" for="email">Email</label>
+                    <input name="email" class="form__input" type="email" id="email" required data-tipo="email">
+                </div>
+                <textarea class="form__textarea" name="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje" pattern="[\s\S]{5,40}" required></textarea>
+                <button class="btn form__btn" type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+    </section> <!-- Informacion -->
+
+    <footer class="footer">
+        <p class="footer__texto">&copy; Desarrollado por Facundo Rullo 2023</p>
+    </footer> <!-- Footer -->
+
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/163fdda2e7.js" crossorigin="anonymous"></script> <!-- Iconos -->
+</body>
+</html>

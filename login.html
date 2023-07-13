@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/general.css"> <!-- General CSS -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Normalize -->
+    <link rel="stylesheet" href="css/header/header-login.css"> <!-- Header -->
+    <link rel="stylesheet" href="css/main/main-login.css"> <!-- Main de Login -->
+    <link rel="stylesheet" href="css/informacion/info.css"> <!-- Información -->
+    <link rel="stylesheet" href="css/formulario/formulario.css"> <!-- Formulario -->
+    <link rel="stylesheet" href="css/footer/footer.css"> <!-- Footer -->
+
+    <title>AluraGeek Login</title>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="index.html">
+            <img 
+                class="img" 
+                src="assets/img/header/Logo-Alura.png" 
+                alt="Logo-ecommerse"
+            >
+        </a>
+        <div class="row-reverse">
+            <div class="buscador">
+                <input class="buscador__texto" type="text" placeholder="¿Que deseas buscar?">
+                <button class="buscador__boton"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header> <!-- Header -->
+
+    <main class="main-login">
+        <h1 class="login__titulo">Iniciar Sesión</h1>
+        <form class="login_form">
+            <input class="login__email" type="email" placeholder="Escriba su correo electronico">
+            <div class="login__password-contenedor">
+                <input class="login__password" type="password" placeholder="Escriba su contraseña">
+                <i class="fa-solid fa-lock login__lock"></i>
+            </div>
+            <div class="login__btn-contenedor">
+                <input class="btn login__entrar" type="submit" value="Entrar">
+            </div>
+        </form>
+    </main>
+
+    <section class="info">
+        <div class="info__contenido">
+            <h3 class="info__logo"><img class="info__img" src="assets/img/header/Logo-Alura.png" alt="Logo-Alura"></h3>
+            <nav class="info__nav">
+                <ul class="info__lista">
+                    <li class="info__item"><a class="info__link" href="#">Quienes somos</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Politicas de privacidad</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Programa de fidelidad</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Nuestras tiendas</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Quiero ser franquiciado</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Anúncie aqui</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="form__contenido">
+            <h3 class="formulario__titulo">Contactenos</h3>
+            <form class="form">
+                <div class="form__nombre">
+                    <label class="form__label" for="nombre">Nombre</label>
+                    <input name="nombre" class="form__input" type="text" id="nombre" required data-tipo="nombre">
+                </div>
+                <div class="form__email">
+                    <label class="form__label" for="email">Email</label>
+                    <input name="email" class="form__input" type="email" id="email" required data-tipo="email">
+                </div>
+                <textarea class="form__textarea" name="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje" pattern="[\s\S]{5,40}" required></textarea>
+                <button class="btn form__btn" type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+    </section> <!-- Informacion -->
+
+    <footer class="footer">
+        <p class="footer__texto">&copy; Desarrollado por Facundo Rullo 2023</p>
+    </footer> <!-- Footer -->
+
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/163fdda2e7.js" crossorigin="anonymous"></script> <!-- Iconos -->
+</body>
+</html>

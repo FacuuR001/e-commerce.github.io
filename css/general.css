@@ -1,0 +1,53 @@
+:root {
+    --colorPrimario: rgba(42, 122, 228, 1);
+    --colorSecundario: rgba(70, 70, 70, 1);
+    --colorInformacion: rgba(234, 242, 253, 1);
+    --colorLabel: rgba(162, 162, 162, 1);
+    --borderBottomInput: rgba(200, 200, 200, 1);
+    --coloBlanco: #fff;
+    --fondoHero: rgba(0, 0, 0, .4);
+    --warning-color: #df2525;
+    --fondoLogin: #f5f5f5;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+* {
+    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.btn {
+    font-weight: 550;
+    padding: 1rem 2rem ;
+    text-align: center;
+    width: 15rem;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+}

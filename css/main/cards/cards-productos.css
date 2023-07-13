@@ -1,0 +1,28 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cards__img {
+    width: 100%;
+}
+
+.cards__marca, .cards__precio {
+    color: var(--colorSecundario);
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+
+
+.cards__producto {
+    color: var(--colorPrimario);
+    font-weight: 600;
+}
+
+@media (min-width: 768px) { 
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -1,0 +1,83 @@
+.info {
+    background-color: var(--colorInformacion);
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__logo {
+    width: 24rem;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.info__img {
+    margin-top: 2rem;
+}
+
+.info__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info__lista {
+    list-style: none;
+}
+
+.info__item {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.info__item:hover {
+    text-decoration: underline;
+}
+
+.info__link {
+    color: var(--colorSecundario);
+}
+
+@media (min-width: 768px) { 
+    .info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .info__contenido {
+        flex-grow: 1;
+    }
+
+    .form__contenido {
+        flex-grow: 2;
+    }
+
+    .formulario__titulo {
+        margin-top: 2rem;
+    }
+
+    .info__nav {
+        text-align: start;
+    }
+
+    .info__img {
+        margin-top: 0;
+    }
+
+    .info__logo {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .info__contenido {
+        display: flex;
+    }
+
+    .info__img {
+        margin-top: rem;
+    }
+}

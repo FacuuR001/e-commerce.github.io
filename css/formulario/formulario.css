@@ -1,0 +1,76 @@
+.formulario__titulo {
+    color: var(--colorSecundario);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.form__nombre, .form__email {
+    background-color: var(--coloBlanco);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 2px solid var(--borderBottomInput);
+}
+
+.form__label {
+    display: block;
+    background-color: var(--coloBlanco);
+    color: var(--colorLabel);
+}
+
+.form__input, .form__textarea {
+    width: 100%;
+}
+
+.form__textarea {
+    height: 10rem;
+    resize: none;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 2px solid var(--borderBottomInput);
+}
+
+.form__btn {
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: var(--colorPrimario);
+    border: none;
+    color: var(--coloBlanco);
+    padding: 1.7rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) { 
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario__titulo {
+        font-size: 2.7rem;
+    }
+    
+    .form__nombre, .form__email {
+        margin-bottom: 1.8rem;
+        padding: .5rem;
+        width: 90%;
+    }
+    
+    .form__input, .form__textarea {
+        width: 90%;
+    }
+    
+    .form__textarea {
+        margin-bottom: 1.8rem;
+    }
+    
+    .form__btn {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) { 
+    .form__btn {
+        width: 30%;
+    }
+}

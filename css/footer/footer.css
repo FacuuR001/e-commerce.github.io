@@ -1,0 +1,12 @@
+.footer {
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.footer__texto {
+    font-size: 1.9rem;
+}
+

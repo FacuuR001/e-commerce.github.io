@@ -1,0 +1,46 @@
+.compra {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.producto__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.producto__titulo {
+    color: var(--colorSecundario);
+    font-size: 2.5rem;
+}
+
+.producto__mas {
+    margin: auto 0;
+    color: var(--colorPrimario);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.producto__agregar {
+    background-color: var(--colorPrimario);
+    color: var(--coloBlanco);
+    width: 14rem;
+    padding: .7rem 1rem ;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.producto__titulo--admin {
+    flex-direction: column;
+}
+
+
+@media (min-width: 768px) { 
+    .producto__titulo--admin {
+        flex-direction: row;
+        line-height: 5.4rem;
+    }
+}

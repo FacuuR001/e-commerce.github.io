@@ -1,0 +1,21 @@
+.cards--editar {
+    position: relative;
+
+}
+
+.cards__iconos {
+    position: absolute;
+    z-index: 1;
+    color: var(--coloBlanco);
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.cards__iconos--basura {
+    margin-right: 3.4rem;
+}
+
+.cards__iconos--editar:hover, .cards__iconos--basura:hover {
+    color: var(--colorPrimario);
+}
