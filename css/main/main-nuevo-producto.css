@@ -26,6 +26,12 @@
     color: var(--colorLabel);
 }
 
+
+.form__producto-input {
+    border: none;
+    outline: none;
+}
+
 .form__producto-input, 
 .form__producto-descripcion {
     width: 100%;
@@ -52,9 +58,6 @@
     cursor: pointer;
 }
 
-@media (min-width: 768px) { 
-    
-}
 
 @media (min-width: 1024px) { 
 

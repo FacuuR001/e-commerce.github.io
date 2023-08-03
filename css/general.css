@@ -8,6 +8,11 @@
     --fondoHero: rgba(0, 0, 0, .4);
     --warning-color: #df2525;
     --fondoLogin: #f5f5f5;
+    --fondoProductoAgregado: #d6eaff;
+    --grisClaro: #4d4d4d;
+    --modalDeBorrado: #007bff;
+    --warning-color: #df2525;
+    --success-color: #047900;
 }
 
 html {

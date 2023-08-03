@@ -4,6 +4,13 @@
     padding: 1.5rem 2rem;
 }
 
+
+.salir {
+    border: 1px solid var(--colorPrimario);
+    color: var(--colorPrimario);
+}
+
+
 .logo {
     display: flex;
     justify-content: center;

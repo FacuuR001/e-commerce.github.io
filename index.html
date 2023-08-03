@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="assets/icono-web/icono.png" type="image/x-icon">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/general.css"> <!-- General CSS -->
     <link rel="stylesheet" href="css/normalize.css"> <!-- Normalize -->
     <link rel="stylesheet" href="css/header/header.css"> <!-- Header -->
+    <link rel="stylesheet" href="css/resultados-busqueda.css"> <!-- Resultados de Busqueda -->
     <link rel="stylesheet" href="css/hero/hero.css"> <!-- Hero -->
     <link rel="stylesheet" href="css/main/main.css"> <!-- Main -->
     <link rel="stylesheet" href="css/main/cards/productos-header.css"> <!-- Autos Header -->
@@ -31,12 +34,15 @@
         </a>
         <div class="row-reverse">
             <div class="buscador">
-                <input class="buscador__texto" type="text" placeholder="¿Que deseas buscar?">
-                <button class="buscador__boton"><i class="fa fa-search"></i></button>
+                <input class="buscador__texto" type="text" placeholder="¿Que deseas buscar?" data-search>
+                <button class="buscador__boton"><i class="fa fa-search" data-lupa></i></button>
             </div>
-            <a href="login.html" class="btn login">Login</a>
+            <a href="screens/login.html" class="btn login" data-btn-login>Login</a>
+            <div class="contenedor__busqueda" data-resul><!-- Aca se muestran los resultados por busqueda --></div>
         </div>
+
     </header> <!-- Header -->
+
 
     <section class="hero">
         <div class="hero__oscuro">
@@ -52,8 +58,8 @@
                 <h2 class="producto__titulo">Autos</h2>
                 <a class="producto__mas" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i> </a>
             </div>
-            <div class="cards">
-                <div class="cards__contenido">
+            <div class="cards" data-autos>
+                <!-- <div class="cards__contenido">
                     <img  class="cards__img" src="assets/img/autos/auto-1.jpg" alt="auto-deportivo">
                     <p class="cards__marca" >Dodge Charger 1970</p>
                     <p class="cards__precio" ><strong>US$ 50,000</strong></p>
@@ -76,7 +82,7 @@
                     <p class="cards__marca" >Ferrari F8 Tributo</p>
                     <p class="cards__precio" ><strong>US$ 400,000</strong></p>
                     <a  class="cards__producto" href="productos-html/autos/auto-4.html">Ver producto</a>
-                </div>
+                </div> -->
             </div>
         </section> <!-- Card Autos -->
 
@@ -85,8 +91,8 @@
                 <h2 class="producto__titulo">Motos</h2>
                 <a class="producto__mas" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i> </a>
             </div>
-            <div class="cards">
-                <div class="cards__contenido">
+            <div class="cards" data-motos>
+                <!-- <div class="cards__contenido">
                     <img  class="cards__img" src="assets/img/motos/moto-1.jpg" alt="motos">
                     <p class="cards__marca" >Yamaha XSR 900</p>
                     <p class="cards__precio" ><strong>US$ 19,000</strong></p>
@@ -109,7 +115,7 @@
                     <p class="cards__marca" >Moto Harley Davidson</p>
                     <p class="cards__precio" ><strong>US$ 27,000</strong></p>
                     <a  class="cards__producto" href="productos-html/motos/moto-4.html">Ver producto</a>
-                </div>
+                </div> -->
             </div>
         </section> <!-- Card Motos -->
 
@@ -118,8 +124,8 @@
                 <h2 class="producto__titulo">Barcos</h2>
                 <a class="producto__mas" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i> </a>
             </div>
-            <div class="cards">
-                <div class="cards__contenido">
+            <div class="cards" data-barcos>
+                <!-- <div class="cards__contenido">
                     <img  class="cards__img" src="assets/img/barcos/barco-1.jpg" alt="barcos">
                     <p class="cards__marca" >Crucero</p>
                     <p class="cards__precio" ><strong>US$ 1.865.000</strong></p>
@@ -130,7 +136,7 @@
                     <p class="cards__marca" >Velero</p>
                     <p class="cards__precio" ><strong>US$ 38,000</strong></p>
                     <a  class="cards__producto" href="productos-html/barcos/barco-2.html">Ver producto</a>
-                </div>
+                </div> -->
             </div>
         </section> <!-- Card Barcos -->
 
@@ -139,8 +145,8 @@
                 <h2 class="producto__titulo">Aviones</h2>
                 <a class="producto__mas" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i> </a>
             </div>
-            <div class="cards">
-                <div class="cards__contenido">
+            <div class="cards" data-aviones>
+                <!-- <div class="cards__contenido">
                     <img  class="cards__img" src="assets/img/aviones/avion-1.jpg" alt="aviones">
                     <p class="cards__marca" >Avion Militar F-35</p>
                     <p class="cards__precio" ><strong>US$ 2.865.000</strong></p>
@@ -175,7 +181,7 @@
                     <p class="cards__marca" >Hidroavion Whistler Air</p>
                     <p class="cards__precio" ><strong>US$ 4.545,250</strong></p>
                     <a  class="cards__producto" href="productos-html/aviones/avion-6.html">Ver producto</a>
-                </div>
+                </div> -->
             </div>
         </section> <!-- Card Aviones -->
 
@@ -184,8 +190,8 @@
                 <h2 class="producto__titulo">Helicopteros</h2>
                 <a class="producto__mas" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i> </a>
             </div>
-            <div class="cards">
-                <div class="cards__contenido">
+            <div class="cards" data-helicopteros>
+                <!-- <div class="cards__contenido">
                     <img  class="cards__img" src="assets/img/helicopteros/helicoptero-1.jpg" alt="helicopteros">
                     <p class="cards__marca" >Helicoptero ZJ19</p>
                     <p class="cards__precio" ><strong>US$ 1.854.000</strong></p>
@@ -196,7 +202,7 @@
                     <p class="cards__marca" >Helicoptero Bombero</p>
                     <p class="cards__precio" ><strong>US$ 1.538,030</strong></p>
                     <a  class="cards__producto" href="productos-html/helicopteros/helicoptero-2.html">Ver producto</a>
-                </div>
+                </div> -->
             </div>
         </section> <!-- Card Helicopteros -->
     </main> <!-- Main -->
@@ -239,6 +245,8 @@
     </footer> <!-- Footer -->
 
     <!-- Script -->
+    <script type="module" src="controllers/productos-controller.js"></script>
+    <script type="module" src="controllers/busqueda-productos-controller.js"></script>
     <script src="https://kit.fontawesome.com/163fdda2e7.js" crossorigin="anonymous"></script> <!-- Iconos -->
 </body>
 </html>

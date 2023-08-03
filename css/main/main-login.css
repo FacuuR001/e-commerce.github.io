@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .login__titulo {
@@ -16,42 +17,95 @@
 .login__email {
     border-radius: 5px;
     padding: 1.5rem 2rem;
-    margin-bottom: 2rem;
     font-size: 2rem;
     width: 33rem;
 }
 
 .login__password {
     font-size: 2rem;
+    background: var(--coloBlanco);
+    /* background: green; */
+    padding: 1.5rem 2rem;
+    width: 28rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 100;
+}
+
+.login__lock {
+    background: var(--coloBlanco);
+    /* background: blue; */
+    padding: 1.49rem 1.8rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    
 }
 
 .login__lock, .login__titulo {
     color: var(--colorSecundario);
 }
-
-.login__lock, .login__entrar {
+.cursor-pointer, .login__entrar {
     cursor: pointer;
 }
 
 .login__password-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+/* .login__password-contenedor {
     background: var(--coloBlanco);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 1.5rem 2rem;
     align-items: center;
     margin-bottom: 2rem;
-}
+    margin-top: 2rem;
+    position: relative;
+} */
+
 
 .login__entrar {
     color: var(--coloBlanco);
     background-color: var(--colorPrimario);
     padding: 1.5rem;
+    width: 100%;
+}
+
+.usuario-no-existe {
+    margin-top: 2rem;
+    color: var(--warning-color);
+    display: none;
 }
 
 .login__btn-contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.input-message-error {
+    display: none;
+    margin-top: -.9rem;
+    margin-bottom: 1.5rem;
+    color: var(--warning-color);
+    width: 30rem;
+
+  }
+
+.input-container--invalid input {
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--warning-color);
 }
 
 @media (min-width: 1024px) { 

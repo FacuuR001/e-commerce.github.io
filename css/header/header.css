@@ -18,6 +18,7 @@
 
 .buscador__texto {
     display: none;
+    width: 17rem;
 }
 
 .buscador {
@@ -37,14 +38,19 @@
     color: var(--colorPrimario);
     border: .1rem solid var(--colorPrimario);
     background-color: transparent;
+    width: 11rem;
+    line-height: 3rem;
 }
 
 .row-reverse {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    position: relative;
     gap: 25px;
 }
+
+
 
 @media (min-width: 768px) { 
     .logo {

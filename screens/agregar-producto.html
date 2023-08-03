@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icono-web/icono.png" type="image/x-icon">
 
      <!-- CSS -->
-     <link rel="stylesheet" href="css/general.css"> <!-- General CSS -->
-     <link rel="stylesheet" href="css/normalize.css"> <!-- Normalize -->
-     <link rel="stylesheet" href="css/header/header.css"> <!-- Header -->
-    <link rel="stylesheet" href="css/header/menu-administrador.css"> <!-- Menu Administrador -->
-    <link rel="stylesheet" href="css/main/main-nuevo-producto.css"> <!-- Nuevo Producto -->
-    <link rel="stylesheet" href="css/informacion/info.css"> <!-- Información -->
-    <link rel="stylesheet" href="css/formulario/formulario.css"> <!-- Formulario -->
-    <link rel="stylesheet" href="css/footer/footer.css"> <!-- Footer -->
+    <link rel="stylesheet" href="../css/general.css"> <!-- General CSS -->
+    <link rel="stylesheet" href="../css/normalize.css"> <!-- Normalize -->
+    <link rel="stylesheet" href="../css/header/header.css"> <!-- Header -->
+    <link rel="stylesheet" href="../css/header/menu-administrador.css"> <!-- Menu Administrador -->
+    <link rel="stylesheet" href="../css/main/main-nuevo-producto.css"> <!-- Nuevo Producto -->
+    <link rel="stylesheet" href="../css/informacion/info.css"> <!-- Información -->
+    <link rel="stylesheet" href="../css/formulario/formulario.css"> <!-- Formulario -->
+    <link rel="stylesheet" href="../css/footer/footer.css"> <!-- Footer -->
 
     <title>Agregar Nuevo Elemento</title>
 </head>
 <body>
     <header class="header">
-        <a class="logo" href="index.html">
+        <a class="logo" href="../index.html">
             <img 
                 class="img" 
-                src="assets/img/header/Logo-Alura.png" 
+                src="../assets/img/header/Logo-Alura.png" 
                 alt="Logo-ecommerse"
             >
         </a>
         <div class="row-reverse row-reverse-administrador">
-            <div class="buscador">
-                <input class="buscador__texto" type="text" placeholder="¿Que deseas buscar?">
-                <button class="buscador__boton"><i class="fa fa-search"></i></button>
+            <div>
+                
             </div>
             <a href="seccion-admin.html" class="btn administrador">Menú Administrador</a>
         </div>
@@ -37,32 +37,40 @@
     <main class="main__nuevo-producto">
         <div class="producto__contenedor">
             <h2 class="nuevo__producto-titulo ">Agregar nuevo producto</h2>
-            <form class="form">
-                <div class="form__producto">
+            <form class="form" data-form>
+                <div class="form__producto" >
                     <label class="form__producto-label" for="url">URL de la imagen</label>
-                    <input name="url" class="form__producto-input" type="url" id="url" required data-tipo="nombre">
+                    <input name="url" class="form__producto-input" type="url" id="url" required data-url>
                 </div>
-                <div class="form__producto ">
+                <div class="form__producto" >
                     <label class="form__producto-label" for="categoria">Categoria</label>
-                    <input name="categoria" class="form__producto-input" type="text" id="categoria" required data-tipo="email">
+                    <!-- <input name="categoria" class="form__producto-input" type="text" id="categoria" required data-categoria> -->
+                    <select name="categoria" id="categoria" class="form__producto-input" required data-categoria>
+                        <option selected disabled >--- Seleccionar --- </option>
+                        <option data-valor value="auto">Autos</option>
+                        <option data-valor value="moto">Motos</option>
+                        <option data-valor value="barco">Barcos</option>
+                        <option data-valor value="avion">Aviones</option>
+                        <option data-valor value="helicoptero">Helicopteros</option>
+                    </select>
                 </div>
-                <div class="form__producto">
+                <div class="form__producto" >
                     <label class="form__producto-label" for="nombreProducto">Nombre del producto</label>
-                    <input name="nombreProducto" class="form__producto-input" type="text" id="nombreProducto" required data-tipo="email">
+                    <input name="nombreProducto" class="form__producto-input" type="text" id="nombreProducto" required data-nombre>
                 </div>
-                <div class="form__producto">
+                <div class="form__producto" >
                     <label class="form__producto-label" for="PrecioProducto">Precio del producto</label>
-                    <input name="PrecioProducto" class="form__producto-input" type="text" id="PrecioProducto" required data-tipo="email">
+                    <input name="PrecioProducto" class="form__producto-input" type="number" id="PrecioProducto" required data-precio>
                 </div>
-                <textarea class="form__producto-descripcion" name="mensaje" cols="30" rows="10" placeholder="Descripcion del producto" pattern="[\s\S]{5,40}" required></textarea>
-                <button class="btn btn__producto-agregar" type="submit">Agregar Producto</button>
+                <textarea class="form__producto-descripcion" name="mensaje" cols="30" rows="10" placeholder="Descripcion del producto" pattern="[\s\S]{5,40}" required data-descripcion></textarea>
+                <button class="btn btn__producto-agregar" type="submit" data-agregar>Agregar Producto</button>
             </form>
         </div>
     </main> <!-- Agregar Nuevo Producto -->
     
     <section class="info">
         <div class="info__contenido">
-            <h3 class="info__logo"><img class="info__img" src="assets/img/header/Logo-Alura.png" alt="Logo-Alura"></h3>
+            <h3 class="info__logo"><img class="info__img" src="../assets/img/header/Logo-Alura.png" alt="Logo-Alura"></h3>
             <nav class="info__nav">
                 <ul class="info__lista">
                     <li class="info__item"><a class="info__link" href="#">Quienes somos</a></li>
@@ -98,6 +106,8 @@
     </footer> <!-- Footer -->
 
     <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../controllers/agregar-producto-controller.js"></script>
     <script src="https://kit.fontawesome.com/163fdda2e7.js" crossorigin="anonymous"></script> <!-- Iconos -->
 </body>
 </html>

@@ -1,0 +1,86 @@
+.register-card__icon-complete {
+   display: block;
+   width: 4rem;
+   height: 4rem;
+   margin-bottom: 1rem;
+   background-image: url(../assets/img/svg/checkmark.svg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.main__modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondoProductoAgregado);
+    height: calc(100vh - 80px);
+}
+
+.modal {
+    background-color: var(--coloBlanco);
+    padding: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 30rem;
+}
+
+.modal__icono {
+    display: flex;
+    justify-content: center;
+}
+
+.modal__texto {
+    font-size: 2.5rem;
+    margin-top: .5rem;
+    color: var(--grisClaro);
+}
+
+.modal__btn {
+    color: var(--coloBlanco);
+    background-color: var(--colorPrimario);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    
+}
+
+@media (min-width: 768px) { 
+    .modal {
+        padding: 6rem;
+        max-width: 50rem;
+    }
+
+    .register-card__icon-complete {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .modal__texto {
+        font-size: 3rem;
+    }
+
+    .modal__btn {
+        padding: 2rem 4rem;
+    }
+}
+
+@media (min-width: 1024px) { 
+    .modal {
+        padding: 5rem;
+        max-width: 50rem;
+    }
+
+    .register-card__icon-complete {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .modal__texto {
+        font-size: 4rem;
+    }
+
+    .modal__btn {
+        padding: 2rem 8rem;
+    }
+}

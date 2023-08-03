@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icono-web/icono.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/general.css"> <!-- General CSS -->
+    <link rel="stylesheet" href="../css/normalize.css"> <!-- Normalize -->
+    <link rel="stylesheet" href="../css/header/header-login.css"> <!-- Header -->
+    <link rel="stylesheet" href="../css/main/cards/productos-header.css"> <!-- Autos Header -->
+    <link rel="stylesheet" href="../css/main/cards/cards-productos.css"> <!-- Cards Autos -->
+    <link rel="stylesheet" href="../css/main/main-ver-productos.css"> <!-- Main Ver Producto -->
+    <link rel="stylesheet" href="../css/main/ver-productos/autos/producto-1.css"> <!-- Producto 1 -->
+    <link rel="stylesheet" href="../css/informacion/info.css"> <!-- Información -->
+    <link rel="stylesheet" href="../css/formulario/formulario.css"> <!-- Formulario -->
+    <link rel="stylesheet" href="../css/footer/footer.css"> <!-- Footer -->
+    <title>Producto</title>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="../index.html">
+            <img 
+                class="img" 
+                src="../assets/img/header/Logo-Alura.png" 
+                alt="Logo-ecommerse"
+            >
+        </a>
+        <a href="../index.html" class="btn inicio">Inicio</a>
+    </header> <!-- Header -->
+
+    <main class="main__verProducto">
+        <section  data-info>
+            <!-- <div class="producto__img-contenido">
+                <img class="producto__img" src="../assets/img/autos/auto-1.jpg" alt="Doge-Charger-1970">
+            </div>
+            <div class="descripciones">
+                <h2 class="producto__titulo">Dodge Charger 1970</h2>
+                <p class="producto__precio"><strong>US$ 50,000</strong></p>
+                <p class="producto__descripcion">El Charger RT 1970, caracterizado por la toma de aire en el cofre, tenía 900 caballos de fuerza. CON ESA POTENCIA, el padre de Dominic conquistó el cuarto de milla en tan solo 9 segundos. Este detalle es importante, pues es muy difícil completar el cuarto de milla en 10 segundos o menos.  </p>
+            </div> -->
+        </section> 
+
+        <section class="productos__similares">
+            <section class="compra">
+                <div class="producto__header">
+                    <h2 class="producto__titulo">Productos similares</h2>
+                    <a class="producto__mas" href="#">Ver todos <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+                <div class="cards">
+                    <div class="cards__contenido">
+                        <img  class="cards__img" src="../assets/img/motos/moto-2.jpg" alt="motos">
+                        <p class="cards__marca" >Moto Chopera</p>
+                        <p class="cards__precio" ><strong>US$ 18,000</strong></p>
+                        <a  class="cards__producto" href="#">Ver producto</a>
+                    </div>
+                    <div class="cards__contenido">
+                        <img  class="cards__img" src="../assets/img/barcos/barco-1.jpg" alt="barcos">
+                        <p class="cards__marca" >Crucero</p>
+                        <p class="cards__precio" ><strong>US$ 1.865.000</strong></p>
+                        <a  class="cards__producto" href="#">Ver producto</a>
+                    </div>
+                    <div class="cards__contenido">
+                        <img  class="cards__img" src="../assets/img/aviones/avion-1.jpg" alt="aviones">
+                        <p class="cards__marca" >Avion Militar F153</p>
+                        <p class="cards__precio" ><strong>US$ 2.865.000</strong></p>
+                        <a  class="cards__producto" href="#">Ver producto</a>
+                    </div>
+                    <div class="cards__contenido">
+                        <img  class="cards__img" src="../assets/img/autos/auto-4.jpg" alt="auto-deportivo">
+                        <p class="cards__marca" >Ferrari F8 Tributo</p>
+                        <p class="cards__precio" ><strong>US$ 400,000</strong></p>
+                        <a  class="cards__producto" href="#">Ver producto</a>
+                    </div>
+                </div>
+            </section> <!-- Card Autos -->
+        </section> <!-- Mas Variedad De Producto -->
+    </main> <!-- Informacion Producto -->
+
+    <section class="info">
+        <div class="info__contenido">
+            <h3 class="info__logo"><img class="info__img" src="../assets/img/header/Logo-Alura.png" alt="Logo-Alura"></h3>
+            <nav class="info__nav">
+                <ul class="info__lista">
+                    <li class="info__item"><a class="info__link" href="#">Quienes somos</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Politicas de privacidad</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Programa de fidelidad</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Nuestras tiendas</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Quiero ser franquiciado</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Anúncie aqui</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="form__contenido">
+            <h3 class="formulario__titulo">Contactenos</h3>
+            <form class="form">
+                <div class="form__nombre">
+                    <label class="form__label" for="nombre">Nombre</label>
+                    <input name="nombre" class="form__input" type="text" id="nombre" required data-tipo="nombre">
+                </div>
+                <div class="form__email">
+                    <label class="form__label" for="email">Email</label>
+                    <input name="email" class="form__input" type="email" id="email" required data-tipo="email">
+                </div>
+                <textarea class="form__textarea" name="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje" pattern="[\s\S]{5,40}" required></textarea>
+                <button class="btn form__btn" type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+    </section> <!-- Informacion -->
+
+    <footer class="footer">
+        <p class="footer__texto">&copy; Desarrollado por Facundo Rullo 2023</p>
+    </footer> <!-- Footer -->
+
+     <!-- Script -->
+     <script src="https://kit.fontawesome.com/163fdda2e7.js" crossorigin="anonymous"></script> <!-- Iconos -->
+     <script type="module" src="../controllers/detalle-producto-controller.js"></script>
+</body>
+</html>

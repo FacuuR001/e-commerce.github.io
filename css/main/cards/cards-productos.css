@@ -4,6 +4,7 @@
     gap: 20px;
 }
 
+
 .cards__img {
     width: 100%;
 }
@@ -19,6 +20,9 @@
 .cards__producto {
     color: var(--colorPrimario);
     font-weight: 600;
+    background-color: var(--fondoLogin);
+    border: none;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) { 

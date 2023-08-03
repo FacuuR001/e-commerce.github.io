@@ -3,52 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="shortcut icon" href="../assets/icono-web/icono.png" type="image/x-icon">    
     <!-- CSS -->
-    <link rel="stylesheet" href="css/general.css"> <!-- General CSS -->
-    <link rel="stylesheet" href="css/normalize.css"> <!-- Normalize -->
-    <link rel="stylesheet" href="css/header/header-login.css"> <!-- Header -->
-    <link rel="stylesheet" href="css/main/main-login.css"> <!-- Main de Login -->
-    <link rel="stylesheet" href="css/informacion/info.css"> <!-- Información -->
-    <link rel="stylesheet" href="css/formulario/formulario.css"> <!-- Formulario -->
-    <link rel="stylesheet" href="css/footer/footer.css"> <!-- Footer -->
+    <link rel="stylesheet" href="../css/general.css"> <!-- General CSS -->
+    <link rel="stylesheet" href="../css/normalize.css"> <!-- Normalize -->
+    <link rel="stylesheet" href="../css/header/header-login.css"> <!-- Header -->
+    <link rel="stylesheet" href="../css/main/main-login.css"> <!-- Main de Login -->
+    <link rel="stylesheet" href="../css/informacion/info.css"> <!-- Información -->
+    <link rel="stylesheet" href="../css/formulario/formulario.css"> <!-- Formulario -->
+    <link rel="stylesheet" href="../css/footer/footer.css"> <!-- Footer -->
 
     <title>AluraGeek Login</title>
 </head>
 <body>
     <header class="header">
-        <a class="logo" href="index.html">
+        <a class="logo" href="../index.html">
             <img 
                 class="img" 
-                src="assets/img/header/Logo-Alura.png" 
+                src="../assets/img/header/Logo-Alura.png" 
                 alt="Logo-ecommerse"
             >
         </a>
-        <div class="row-reverse">
-            <div class="buscador">
-                <input class="buscador__texto" type="text" placeholder="¿Que deseas buscar?">
-                <button class="buscador__boton"><i class="fa fa-search"></i></button>
-            </div>
-        </div>
+        
+
     </header> <!-- Header -->
 
     <main class="main-login">
         <h1 class="login__titulo">Iniciar Sesión</h1>
-        <form class="login_form">
-            <input class="login__email" type="email" placeholder="Escriba su correo electronico">
-            <div class="login__password-contenedor">
-                <input class="login__password" type="password" placeholder="Escriba su contraseña">
-                <i class="fa-solid fa-lock login__lock"></i>
-            </div>
+        <form class="login_form" data-login>
+            <div class="login__email-contenedor "> <!-- input-container--invalid -->
+                <div>
+                    <input class="login__email" type="email" placeholder="Escriba su correo electronico" data-seleccion data-emailLogin data-tipo="email" required>
+                    <p class="input-message-error">Este campo no es valido</p>
+                </div>
+            <div class="login__password-contenedor "> <!-- input-container--invalid -->
+                        <input class="login__password" type="password" placeholder="Escriba su contraseña" data-seleccion data-contraseñaLogin required data-tipo="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{6,15}$" title="Al menos 6 caracteres, máximo 15, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales.">
+                        <div class="login__lock">
+                            <i class="fa-solid fa-lock cursor-pointer" data-icono-login></i>
+                        </div>
+                        <p class="input-message-error sss">Este campo no es valido</p>
+                </div>
             <div class="login__btn-contenedor">
-                <a class="btn login__entrar" href="seccion-admin.html">Entrar</a>
+                <!-- <a class="btn login__entrar" href="">Entrar</a> -->
+                <input class="btn login__entrar" type="submit" value="Entrar">
+                <span class="usuario-no-existe" data-msj-error>Usuario no existente</span>
             </div>
         </form>
     </main>
 
     <section class="info">
         <div class="info__contenido">
-            <h3 class="info__logo"><img class="info__img" src="assets/img/header/Logo-Alura.png" alt="Logo-Alura"></h3>
+            <h3 class="info__logo"><img class="info__img" src="../assets/img/header/Logo-Alura.png" alt="Logo-Alura"></h3>
             <nav class="info__nav">
                 <ul class="info__lista">
                     <li class="info__item"><a class="info__link" href="#">Quienes somos</a></li>
@@ -85,5 +90,8 @@
 
     <!-- Script -->
     <script src="https://kit.fontawesome.com/163fdda2e7.js" crossorigin="anonymous"></script> <!-- Iconos -->
+    <script type="module" src="../controllers/iniciar-session-controller.js"></script> <!-- Iniciar session -->
+    <script type="module" src="../js/app.js"></script> <!-- Validacion Login -->
+    <script src="../js/ver-contraseña.js"></script>
 </body>
 </html>

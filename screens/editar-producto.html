@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icono-web/icono.png" type="image/x-icon">
+
+     <!-- CSS -->
+    <link rel="stylesheet" href="../css/general.css"> <!-- General CSS -->
+    <link rel="stylesheet" href="../css/normalize.css"> <!-- Normalize -->
+    <link rel="stylesheet" href="../css/header/header.css"> <!-- Header -->
+    <link rel="stylesheet" href="../css/header/menu-administrador.css"> <!-- Menu Administrador -->
+    <link rel="stylesheet" href="../css/main/main-nuevo-producto.css"> <!-- Nuevo Producto -->
+    <link rel="stylesheet" href="../css/informacion/info.css"> <!-- Información -->
+    <link rel="stylesheet" href="../css/formulario/formulario.css"> <!-- Formulario -->
+    <link rel="stylesheet" href="../css/footer/footer.css"> <!-- Footer -->
+
+    <title>Actualizar Producto</title>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="../index.html">
+            <img 
+                class="img" 
+                src="../assets/img/header/Logo-Alura.png" 
+                alt="Logo-ecommerse"
+            >
+        </a>
+        
+            <a href="seccion-admin.html" class="btn administrador">Menú Administrador</a>
+        </div>
+    </header> <!-- Header -->
+
+    <main class="main__nuevo-producto">
+        <div class="producto__contenedor">
+            <h2 class="nuevo__producto-titulo ">Actualizar nuevo producto</h2>
+            <form class="form" data-formEditar>
+                <div class="form__producto" >
+                    <label class="form__producto-label" for="url">URL de la imagen</label>
+                    <input name="url" class="form__producto-input" type="url" id="url" required data-url>
+                </div>
+                <div class="form__producto" >
+                    <label class="form__producto-label" for="categoria">Categoria</label>
+                    <!-- <input name="categoria" class="form__producto-input" type="text" id="categoria" required data-categoria> -->
+                    <select name="categoria" id="categoria" class="form__producto-input" required data-categoria>
+                        <option selected disabled >--- Seleccionar --- </option>
+                        <option data-valor value="auto">Autos</option>
+                        <option data-valor value="moto">Motos</option>
+                        <option data-valor value="barco">Barcos</option>
+                        <option data-valor value="avion">Aviones</option>
+                        <option data-valor value="helicoptero">Helicopteros</option>
+                    </select>
+                </div>
+                <div class="form__producto" >
+                    <label class="form__producto-label" for="nombreProducto">Nombre del producto</label>
+                    <input name="nombreProducto" class="form__producto-input" type="text" id="nombreProducto" required data-nombre>
+                </div>
+                <div class="form__producto" >
+                    <label class="form__producto-label" for="PrecioProducto">Precio del producto</label>
+                    <input name="PrecioProducto" class="form__producto-input" type="number" id="PrecioProducto" required data-precio>
+                </div>
+                <textarea class="form__producto-descripcion" name="mensaje" cols="30" rows="10" placeholder="Descripcion del producto" pattern="[\s\S]{5,40}" required data-descripcion></textarea>
+                <button class="btn btn__producto-agregar" type="submit" data-agregar>Actualizar Producto</button>
+            </form>
+        </div>
+    </main> <!-- Agregar Nuevo Producto -->
+    
+    <section class="info">
+        <div class="info__contenido">
+            <h3 class="info__logo"><img class="info__img" src="../assets/img/header/Logo-Alura.png" alt="Logo-Alura"></h3>
+            <nav class="info__nav">
+                <ul class="info__lista">
+                    <li class="info__item"><a class="info__link" href="#">Quienes somos</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Politicas de privacidad</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Programa de fidelidad</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Nuestras tiendas</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Quiero ser franquiciado</a></li>
+                    <li class="info__item"><a class="info__link" href="#">Anúncie aqui</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="form__contenido">
+            <h3 class="formulario__titulo">Contactenos</h3>
+            <form class="form">
+                <div class="form__nombre">
+                    <label class="form__label" for="nombre">Nombre</label>
+                    <input name="nombre" class="form__input" type="text" id="nombre" required data-tipo="nombre">
+                </div>
+                <div class="form__email">
+                    <label class="form__label" for="email">Email</label>
+                    <input name="email" class="form__input" type="email" id="email" required data-tipo="email">
+                </div>
+                <textarea class="form__textarea" name="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje" pattern="[\s\S]{5,40}" required></textarea>
+                <button class="btn form__btn" type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+    </section> <!-- Informacion -->
+
+    <footer class="footer">
+        <p class="footer__texto">&copy; Desarrollado por Facundo Rullo 2023</p>
+    </footer> <!-- Footer -->
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../controllers/actualizar-producto-controller.js"></script>
+    <script src="https://kit.fontawesome.com/163fdda2e7.js" crossorigin="anonymous"></script> <!-- Iconos -->
+</body>
+</html>

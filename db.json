@@ -1,0 +1,154 @@
+{
+  "producto": [
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/autos/auto-1.jpg",
+      "categoria": "auto",
+      "nombre": "Dodge Charger 1970",
+      "precio": "50000",
+      "descripcion": "El Charger RT 1970, caracterizado por la toma de aire en el cofre, tenía 900 caballos de fuerza. CON ESA POTENCIA, el padre de Dominic conquistó el cuarto de milla en tan solo 9 segundos. Este detalle es importante, pues es muy difícil completar el cuarto de milla en 10 segundos o menos.",
+      "id": "1"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/autos/auto-2.jpg",
+      "categoria": "auto",
+      "nombre": "Nissan SkyLine r34",
+      "precio": "1360000",
+      "descripcion": "El Nissan Skyline es un modelo de auto japonés que se ha producido en distintas versiones ininterrumpidamente desde 1957. Sería tras la fusión de los fabricantes Prince y Nissan, cuando comenzó a comercializarse con este nombre. Por estos días, el GTR R34 se ha convertido en el carro más deseado.",
+      "id": "2"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/autos/auto-3.jpg",
+      "categoria": "auto",
+      "nombre": "Lamborghini Urus",
+      "precio": "280000",
+      "descripcion": "El alma de un coche superdeportivo y la funcionalidad de un SUV: Lamborghini Urus es el primer vehículo utilitario superdeportivo en todo el mundo. Con unas proporciones extremas, un diseño estremecedor, una dinámica de conducción extraordinaria y un rendimiento taquicárdico, Urus es la libertad en estado puro.",
+      "id": "579ba193-70a2-4a2e-983b-c141c313435e"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/motos/moto-4.jpg",
+      "categoria": "moto",
+      "nombre": "Moto Harley Davidson",
+      "precio": "27000",
+      "descripcion": "El nuevo modelo de la H.D. de la marca norteamericana mide 2.185 mm de longitud, con un asiento a 760 mm de altura (sin carga) y una distancia mínima al suelo de 140 mm. Asimismo, la distancia entre ejes es de 1.515 mm y cuenta con un ángulo de dirección de 30 grados.",
+      "id": "9926461c-fca3-4cc4-9301-70f0a7f11e97"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/motos/moto-1.jpg",
+      "categoria": "moto",
+      "nombre": "Yamaha XSR 900",
+      "precio": "19000",
+      "descripcion": "La XSR900, en su versión 2022, monta un chasis de aluminio compacto y ligero que ofrece una mayor rigidez que el anterior. Destaca por su estabilidad en línea recta y además, con las modificaciones incorporadas, hace que la posición del manillar sea más baja, facilitando la conducción deportiva.",
+      "id": "b12caa3b-d176-4a73-a7b3-9e8f72ef4f1f"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/aviones/avion-1.jpg",
+      "categoria": "avion",
+      "nombre": "Avion Militar F153",
+      "precio": "2865000",
+      "descripcion": "El F-35 es un caza de peso medio y monomotor, parece una versión más pequeña, más convencional y con un solo motor, del Lockheed Martin F-22 Raptor pesado y bimotor, y de hecho ambos modelos comparten muchos elementos comunes.",
+      "id": "85545b45-d8ee-4bfe-bdd2-97faeb29fd1a"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/autos/auto-4.jpg",
+      "categoria": "auto",
+      "nombre": "Ferrari F8 Tributo",
+      "precio": "400000",
+      "descripcion": "El F8 Tributo es un Ferrari 488 Pista con mejoras en la carrocería y 50 caballos más de potencia. El F8 perfecciona la mecánica, la aerodinámica y la tecnología del 488 GTB. Según Flavio Manzoni, vicepresidente de diseño de Ferrari, con el F8 se busca una “Fusión entre la tecnología y el arte”.",
+      "id": "36c4ddfe-70a3-4fb3-9814-982ede5462bb"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/motos/moto-2.jpg",
+      "categoria": "moto",
+      "nombre": "Moto Chopera",
+      "precio": "18000",
+      "descripcion": "Una Chopper es un tipo de motocicleta modificada (Chopped), para tener un ángulo de lanzamiento mayor, con horquilla más larga, lo que le da una batalla y avance más grandes que el resto de los tipos de motocicletas.",
+      "id": "4334e457-13ec-4833-9df8-1c313095353b"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/motos/moto-3.jpg",
+      "categoria": "moto",
+      "nombre": "Suzuki TS",
+      "precio": "10000",
+      "descripcion": "La Suzuki TS 185 es una motocicleta con una larga trayectoria dentro de la línea de motocicletas de Suzuki, lo que viene a ser una moto de las de antes. Introducida en 1971 La TS es una motocicleta de enduro con un motor de 1 cilindro de dos tiempos enfriado por aire que entrega hasta 18.3 HP. Tiene además un tanque de combustible de 13 l.",
+      "id": "3ed3436d-3f8a-48b3-939e-b4a961baabdc"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/aviones/avion-3.jpg",
+      "categoria": "avion",
+      "nombre": "Avion N63392",
+      "precio": "5865090",
+      "descripcion": "Un avión ligero (en las categorías más ligeras también avioneta) es un avión de tamaño relativamente pequeño. Si bien algunas entidades reguladoras aeronáuticas definen «avión ligero» como aeronaves de cierto rango de pesos.",
+      "id": "8ed340f8-1ee7-4b5e-9718-dd3bdc10e43e"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/aviones/avion-6.jpg",
+      "categoria": "avion",
+      "nombre": "Hidroavion Whistler Air",
+      "precio": "4545250",
+      "descripcion": "Avión capaz de despegar y aterrizar en una superficie de agua. Los hidroaviones que también pueden despegar y aterrizar en aeródromos se llaman aviones anfibios. Los hidroaviones se suelen dividir en dos categorías basadas en sus características técnicas: hidroaviones de flotadores e hidrocanoas.",
+      "id": "a7fae0d9-3ae9-4918-8b8c-f6ac1b37c946"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/aviones/avion-5.jpg",
+      "categoria": "avion",
+      "nombre": "Avion Militar J-5005",
+      "precio": "7595450",
+      "descripcion": "El J-5005 es un caza/interceptor de propulsión a reacción monoplaza de fabricación china derivado del Mikoyan-Gurevich MiG-17 soviético. Fue exportado como el F-5, y su nombre de reporte para la OTAN era “Fresco”.",
+      "id": "3bce35a8-94be-4bdc-88e2-dcffb6bf77c0"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/aviones/avion-2.jpg",
+      "categoria": "avion",
+      "nombre": "Avion de Carga Militar",
+      "precio": "9538030",
+      "descripcion": "Las aeronaves de transporte militar son típicamente aeronaves de carga de ala fija o giratoria que son usadas para enviar tropas, armamento y otro equipamiento militar a través de distintos métodos a cualquier lugar de operaciones militares alrededor de la superficie del planeta, normalmente fuera de las rutas de vuelo comerciales en espacio aéreo no controlado.",
+      "id": "4262bf6a-2ff2-4899-88d6-dc17fd497ea5"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/aviones/avion-4.jpg",
+      "categoria": "avion",
+      "nombre": "Avion Kax",
+      "precio": "12238500",
+      "descripcion": "Cuenta con motores actualizados que consumen combustible de forma más eficiente y con un diseño de cabina de vuelo moderno. Los motores LEAP-1B proporcionan una eficiencia de combustible ampliamente mejorada.",
+      "id": "b6edc443-232c-46da-872c-85990fb5f824"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/barcos/barco-2.jpg",
+      "categoria": "barco",
+      "nombre": "Velero",
+      "precio": "38000",
+      "descripcion": "Es un barco en el cual la acción del viento sobre su aparejo constituye su forma principal de propulsión.",
+      "id": "68552686-e0e2-4f86-a101-7dd5a2bfa874"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/barcos/barco-1.jpg",
+      "categoria": "barco",
+      "nombre": "Crucero",
+      "precio": "1865000",
+      "descripcion": "El MSC Armonia es un crucero de la clase Lirica construido en 2001 para la compañía desaparecida Festival Cruises con el nombre de MS European Vision. Actualmente es operado por MSC Crociere. Puede acomodar 2065 pasajeros en 783 camarotes. Su tripulación es de aproximadamente 760 personas.",
+      "id": "7d8cf16d-ee82-4edd-a46d-c86219cee4f1"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/helicopteros/helicoptero-1.jpg",
+      "categoria": "helicoptero",
+      "nombre": "Helicoptero ZJ19",
+      "precio": "1854000",
+      "descripcion": "Es un helicóptero utilitario militar de carga media, bimotor con rotor de cuatro palas, fabricado por la compañía estadounidense Sikorsky Aircraft y de tamaño medio. Sikorsky Aircraft presentó el diseño del Sikorsky S-70 para la competición UTTAS (siglas en inglés de Utility Tactical Transport Aircraft System) organizada por el Ejército de los Estados Unidos en 1972 para un helicóptero utilitario de transporte táctico.",
+      "id": "4a0c6926-ca59-4f63-9bb7-a673f7d7644b"
+    },
+    {
+      "imgURL": "https://raw.githubusercontent.com/FacuuR001/e-commerce.github.io/main/assets/img/helicopteros/helicoptero-2.jpg",
+      "categoria": "helicoptero",
+      "nombre": "Helicoptero Bombero",
+      "precio": "1538030",
+      "descripcion": "Ofrece soluciones para servicios médicos aéreos con una variedad de productos personalizados según sus necesidades. ",
+      "id": "fa57fd9c-ec2e-4b23-a9e7-5a2682d3c12d"
+    }
+  ],
+  "perfil": [
+    {
+      "usuario": "facu132@alura.com",
+      "contraseña": "Facu12AAA"
+    }
+  ]
+}
