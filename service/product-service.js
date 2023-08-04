@@ -50,7 +50,7 @@ const usuario = async () => {
 const buscador = () => {
   const inputBusqueda = document.querySelector('[data-search]');
   const terminoBusqueda = inputBusqueda.value.toLowerCase();
-  return fetch(`http://localhost:3000/producto?q=${terminoBusqueda}`).then(respuesta => respuesta.json());
+  return fetch(`https://backend-eccomerse.vercel.app/producto?q=${terminoBusqueda}`).then(respuesta => respuesta.json());
 }
 
 export const productoServices = {
