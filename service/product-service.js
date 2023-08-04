@@ -1,9 +1,9 @@
-const listaProductos = async () => fetch("http://localhost:3000/producto")
+const listaProductos = async () => fetch("https://backend-eccomerse.vercel.app/producto")
   .then( respuesta =>respuesta.json())
   .catch(() => alert( "No se encontro servidor")); 
 
 const crearProducto = (imgURL, categoria, nombre, precio, descripcion, id) => {
-    return fetch("http://localhost:3000/producto", {
+    return fetch("https://backend-eccomerse.vercel.app/producto", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -14,21 +14,21 @@ const crearProducto = (imgURL, categoria, nombre, precio, descripcion, id) => {
 
 
 const seccionAdmin = () => {
-  return fetch("http://localhost:3000/producto").then( respuesta =>respuesta.json());
+  return fetch("https://backend-eccomerse.vercel.app/producto").then( respuesta =>respuesta.json());
 }
 
 const detallaProducto = (id) => {
-  return fetch(`http://localhost:3000/producto/${id}`).then( (respuesta) => respuesta.json());
+  return fetch(`https://backend-eccomerse.vercel.app/producto/${id}`).then( (respuesta) => respuesta.json());
 }
 
 const eliminarProducto = (id) => {
-  return fetch(`http://localhost:3000/producto/${id}`, {
+  return fetch(`https://backend-eccomerse.vercel.app/producto/${id}`, {
     method: "DELETE"
   });
 }
 
 const actualizarProducto = (imgURL, categoria, nombre, precio, descripcion, id) => {
-  return fetch(`http://localhost:3000/producto/${id}`, {
+  return fetch(`https://backend-eccomerse.vercel.app/producto/${id}`, {
     method: "PUT",
     headers: {
       'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ const actualizarProducto = (imgURL, categoria, nombre, precio, descripcion, id) 
 }
 
 const usuario = async () => {
-  return fetch("http://localhost:3000/perfil").then(respuesta => respuesta.json());
+  return fetch("https://backend-eccomerse.vercel.app/perfil").then(respuesta => respuesta.json());
 }
 
 
