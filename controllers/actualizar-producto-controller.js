@@ -50,7 +50,7 @@ actalizar.addEventListener("submit", (evento) => {
     const descripcion = document.querySelector("[data-descripcion]").value;
 
     productoServices.actualizarProducto(imgURL, categoria, nombre, precio, descripcion, id)
-        .then( () => window.location.href = "producto-actualizado.html")
+        .then( () => window.location.href = "producto-agregado.html")
         .catch(err => console.log(err));
 });
 
