@@ -4,11 +4,13 @@ export const nuevoProducto = (imgURL, categoria, nombre, precio, descripcion, id
     const card = document.createElement("div");
     card.classList.add("cards__contenido");
     const contenido = `
+            <div class="img__card-container">
             <img  
                 class="cards__img" 
                 src="${imgURL}" 
                 alt="${categoria}"
             >
+            </div>
 
             <p class="cards__marca" > ${nombre} </p>
             <p class="cards__precio" ><strong> US$ ${precio}</strong></p>
